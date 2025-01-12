@@ -53,8 +53,7 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/chatbot-html-css.git
-cd chatbot-html-css
+git clone https://github.com/ekta111/html-css-gen-chatbot.git
 ```
 
 ### 2. Install dependencies
@@ -67,13 +66,12 @@ npm install
 
 ### 3. Set up environment variables
 
-Create a `.env.local` file in the root directory and add the following environment variables:
+Create a `.env` file in the root directory and add the following environment variables:
 
 ```plaintext
-NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your-secret-here
 DATABASE_URL=your-database-connection-string
-GENAI_API_KEY=your-genai-api-key
+OPENAI_API_KEY=your-genai-api-key
 ```
 
 Replace the placeholders with your actual credentials for the database and GenAI API.
@@ -94,37 +92,15 @@ This application is deployed on **Vercel**. You can access the live demo at:
 
 ## Code Structure
 
-- `pages/`: Contains Next.js pages for the authentication flow and chatbot interface.
+- `app/`: Contains Next.js pages for the authentication flow and chatbot interface.
 - `components/`: Contains reusable UI components like buttons, chatbox, and live preview components.
-- `lib/`: Includes utility functions, including the API integration with the GenAI API provider.
 - `prisma/`: Contains Prisma schema and database migration files.
-- `styles/`: Contains Tailwind CSS configurations and other styles.
 
 ## Features and Enhancements
 
 - **Live Preview**: Users can see a real-time preview of the generated HTML/CSS code.
-- **Download Option**: The HTML code can be downloaded for use in projects.
-- **User Authentication**: Secure login and signup using **NextAuth.js**.
+- **User Authentication**: Secure login/logout and signup using **NextAuth.js**.
 - **Chatbot Customization**: Fine-tuned system prompts to optimize chatbot responses for landing page creation.
-
-## Future Improvements
-
-- **Mobile-First Design**: Ensure that the UI is fully optimized for mobile devices.
-- **Advanced Templates**: Add more predefined templates for users to choose from.
-- **Feedback Loop**: Implement a feedback system to improve chatbot responses over time.
-
-## Additional Libraries and Tools
-
-- **Tailwind CSS**: Used for rapid UI development and responsiveness.
-- **ShadcnUI**: Provides pre-built components to enhance the user interface.
-- **Prisma**: ORM for seamless database management and interactions.
-- **Vercel’s AI SDK**: Utilized to integrate the GenAI API with the application.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
----
 
 ## Conclusion
 

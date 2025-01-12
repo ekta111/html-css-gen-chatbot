@@ -1,0 +1,11 @@
+{
+    "build": {
+      "env": {
+        "DATABASE_URL": "postgresql://postgres:Ekta@supabase@db.wzrlegkljyyljwuyougy.supabase.co:5432/postgres"
+      },
+      "commands": [
+        "npx prisma generate"
+      ]
+    }
+  }
+  
