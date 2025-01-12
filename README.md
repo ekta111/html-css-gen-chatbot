@@ -84,12 +84,6 @@ npm run dev
 
 Now, open your browser and navigate to `http://localhost:3000` to access the application.
 
-## Deployment
-
-This application is deployed on **Vercel**. You can access the live demo at:
-
-[Live Demo URL](https://your-deployed-app.vercel.app)
-
 ## Code Structure
 
 - `app/`: Contains Next.js pages for the authentication flow and chatbot interface.
